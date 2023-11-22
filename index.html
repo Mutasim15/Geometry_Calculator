@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="mx-10 my-10">
+   <section>
+            <div class="flex justify-between bg-violet-200 p-2 ">
+                <div> 
+                    <h3 class="text-3xl font-semibold">Interactive <span class="text-2xl "></span> </h3>
+                    <h3>Geometry Genious</h3>
+                </div>
+                <div>
+                    <h3><button class="bg-indigo-600 px-4 py-2 text-white rounded">Blog</button></h3>
+                </div>
+            </div>
+   </section>
+
+   <!-- section Geometric Calculator -->
+   <section>
+    <div class="grid grid-cols-4 gap-4 pt-10">
+        <div class="grid grid-rows-1 ">
+            <div class="flex content-center justify-center"> <img class="h-24" src="images/triangle.png" alt=""></div>
+            <div class="flex content-center justify-center pt-6"> <h2 class="font-semibold text-2xl">Triangle</h2> </div>
+            <div class="flex content-center justify-center"><h2>Area(A) = 0.5xbxh</h2></div>
+            <div class="flex content-center justify-center pt-6">
+                <input id="input_field_b" class="input_field"  type="number" placeholder="b" > cm
+                <input id="input_field_h" class="input_field" type="number" placeholder="h" > cm
+            </div>
+            <div id="submit_triangle" class="flex content-center justify-center pt-6"> <button id="submit_triangle" class="w-11/12 h-12 bg-blue-400 text-white text-2xl rounded">Calculate</button></div>
+
+        </div>
+        <div class="grid grid-rows-1  ">
+            <div class="flex content-center justify-center"> <img class="h-24" src="images/rectangle.png" alt=""></div>
+            <div class="flex content-center justify-center pt-6"> <h2 class="font-semibold text-2xl">Rectangle</h2> </div>
+            <div class="flex content-center justify-center"><h2>Area (A) = w x I</h2></div>
+            <div class="flex content-center justify-center pt-6">
+                <input class="input_field"  type="number" placeholder="w" > cm
+                <input class="input_field" type="number" placeholder="I" > cm
+            </div>
+            <div  class="flex content-center justify-center pt-6"> <button class="w-11/12 h-12 bg-blue-400 text-white text-2xl rounded">Calculate</button></div>
+        </div>
+        <div class="grid grid-rows-1  ">
+            <div class="flex content-center justify-center"> <img class="h-24" src="images/parallelogram.png" alt=""></div>
+            <div class="flex content-center justify-center pt-6"> <h2 class="font-semibold text-2xl">Parallelogram</h2> </div>
+            <div class="flex content-center justify-center"><h2>Area(A)= b x h</h2></div>
+            <div class="flex content-center justify-center pt-6">
+                <input class="input_field"  type="number" placeholder="b" > cm
+                <input class="input_field" type="number" placeholder="h" > cm
+            </div>
+            <div  class="flex content-center justify-center pt-6"> <button class="w-11/12 h-12 bg-blue-400 text-white text-2xl rounded">Calculate</button></div>
+        </div>
+        <div class="grid grid-rows-1  ">
+            <div class="flex content-center justify-center"> <h2>Area Caculation</h2></div>
+            <div class="grid grid-rows-1 mt-2"> 
+               <div id="convertmetersquare" class="hidden">1. Triangle<span id="trangle"> </span>cm<sup>2</sup> <button id="convertmetersquarebtn" class="bg-blue-400 text-white rounded font-semibold p-2 ">Convert m<sup>2</sup> </button> </div>
+               <div id="convertCentimeterSquare"class="hidden">1. Triangle<span id="trangle2"> </span>m<sup>2</sup> <button id="convertcentimetersquarebtn" class="bg-blue-400 text-white rounded font-semibold p-2 ">Convert cm<sup>2</sup> </button></div>
+               <div class="hidden"> 2. Triangle<span id="triangle"> </span> cm<sup>2</sup> <button>Convert m<sup>2</sup> </button></div>
+               <div class="hidden"> 3. Triangle<span id="triangle"> </span>cm<sup>2</sup> <button>Convert m<sup>2</sup> </button></div>
+               <div class="hidden"> 4. Triangle<span id="triangle"> </span>cm<sup>2</sup> <button>Convert m<sup>2</sup> </button></div>
+               <div class="hidden"> 5. Triangle<span id="triangle"> </span>cm<sup>2</sup> <button>Convert m<sup>2</sup> </button></div>
+               <div class="hidden"> 6. Triangle<span id="triangle"> </span>cm<sup>2</sup> <button>Convert m<sup>2</sup> </button></div>
+           
+            </div>
+        </div> 
+          
+     
+    </div>
+    <div class="grid grid-cols-4 gap-4 pt-10">
+        <div class="grid grid-rows-1  ">
+            <div class="flex content-center justify-center"> <img class="h-24" src="images/rhombus.png" alt=""></div>
+            <div class="flex content-center justify-center pt-6"> <h2 class="font-semibold text-2xl">Rhombus</h2> </div>
+            <div class="flex content-center justify-center"><h2>Area(A) =0.5 x d1 x d2</h2></div>
+            <div class="flex content-center justify-center pt-6">
+                <input class="input_field"  type="number" placeholder="d1" > cm
+                <input class="input_field" type="number" placeholder="d2" > cm
+            </div>
+            <div  class="flex content-center justify-center pt-6"> <button class="w-11/12 h-12 bg-blue-400 text-white text-2xl rounded">Calculate</button></div>
+        </div>
+        <div class="grid grid-rows-1  ">
+            <div class="flex content-center justify-center"> <img class="h-24" src="images/pentagon.png" alt=""></div>
+            <div class="flex content-center justify-center pt-6"> <h2 class="font-semibold text-2xl">Pentagon</h2> </div>
+            <div class="flex content-center justify-center"><h2>Area(A) = 0.5 x p x b</h2></div>
+            <div class="flex content-center justify-center pt-6">
+                <input class="input_field"  type="number" placeholder="b" > cm
+                <input class="input_field" type="number" placeholder="h" > cm
+            </div>
+            <div  class="flex content-center justify-center pt-6"> <button class="w-11/12 h-12 bg-blue-400 text-white text-2xl rounded">Calculate</button></div>
+        </div>
+        <div class="grid grid-rows-1  ">
+            <div class="flex content-center justify-center"> <img class="h-24" src="images/ellipse.png" alt=""></div>
+            <div class="flex content-center justify-center pt-6"> <h2 class="font-semibold text-2xl">Triangle</h2> </div>
+            <div class="flex content-center justify-center"><h2>Area(A)= π x a x b</h2></div>
+            <div class="flex content-center justify-center pt-6">
+                <input class="input_field"  type="number" placeholder="b" > cm
+                <input class="input_field" type="number" placeholder="h" > cm
+            </div>
+            <div  class="flex content-center justify-center pt-6"> <button class="w-11/12 h-12 bg-blue-400 text-white text-2xl rounded">Calculate</button></div>
+        </div>
+       
+    </div>
+</section>
+
+
+
+<script src="JS/btn.js"></script>
+<!-- <script src="JS/app.js"></script> -->
+<script src="js/utilities.js"></script>
+</body>
+</html>
